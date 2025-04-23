@@ -1,35 +1,86 @@
-# Car Price Prediction
-
-Problem Statement:
-
-A Chinese automobile company Geely Auto aspires to enter the US market by setting up their manufacturing unit there and producing cars locally to give competition to their US and European counterparts.
-
-They have contracted an automobile consulting company to understand the factors on which the pricing of cars depends. Specifically, they want to understand the factors affecting the pricing of cars in the American market, since those may be very different from the Chinese market. The company wants to know:
-
- - Which variables are significant in predicting the price of a car?
- - How well those variables describe the price of a car?
-
-Based on various market surveys, the consulting firm has gathered a large dataset of different types of cars across the Americal market.
 
 
+# 🚗 Car Price Prediction Project
 
-Business Goal:
+This repository contains the code and resources for a machine learning project aimed at predicting car prices based on various features. The project utilizes both Linear Regression and Random Forest Regression models to achieve accurate predictions.
 
-we are required to model the price of cars with the available independent variables. It will be used by the management to understand how exactly the prices vary with respect to the independent variables. They can accordingly manipulate the design of the cars, the business strategy etc. to meet certain price levels. The model will act as a better medium for management to understand the pricing dynamics of a new market.
+## Project Overview
 
+The objective of this project is to develop a predictive model that can accurately estimate car prices based on features such as age, mileage, brand, model, and other relevant attributes. This project showcases the application of machine learning techniques in a real-world scenario.
 
+## Dataset
 
-Following steps will be followed to reach our goal:
+The dataset used for this project contains the following attributes:
+- **name**: Name of the car
+- **year**: Year of manufacture
+- **selling_price**: Selling price of the car
+- **km_driven**: Total kilometers driven
+- **fuel**: Type of fuel used (e.g., Petrol, Diesel, CNG)
+- **seller_type**: Type of seller (e.g., Dealer, Individual)
+- **transmission**: Type of transmission (e.g., Manual, Automatic)
+- **owner**: Number of previous owners
 
-1) Importing libraries
-2) Reading the concerned dataset
-3) Data Understanding
-4) Data handling
-5) Data visualization
-6) Data preparation
-7) Splitting the Data and feature scaling
-8) Building a linear regression model
-9) Residual analysis of the train data
-10) Making Predictions Using the Final Model
-11) Model Evaluation
-12) Conclusion
+## Models Used
+
+1. **Linear Regression:**
+   - Implemented as the baseline model.
+   - Evaluated using key metrics: Mean Absolute Error (MAE), Mean Squared Error (MSE), and R² Score.
+
+2. **Random Forest Regressor:**
+   - Used to improve prediction accuracy.
+   - Conducted cross-validation to ensure model robustness.
+   - Performed hyperparameter tuning to optimize model performance.
+
+## Metrics
+
+The performance of both models was evaluated using the following metrics:
+- **Mean Absolute Error (MAE)**
+- **Mean Squared Error (MSE)**
+- **R² Score**
+
+## Cross-Validation
+
+Cross-validation was conducted to ensure the robustness and reliability of the models. This technique helps in assessing the generalizability of the models to unseen data.
+
+## Hyperparameter Tuning
+
+For the Random Forest model, hyperparameter tuning was performed to find the optimal set of parameters. The following hyperparameters were tuned:
+- **n_estimators**: Number of trees in the forest.
+- **max_depth**: Maximum depth of the tree.
+- **min_samples_split**: Minimum number of samples required to split a node.
+- **min_samples_leaf**: Minimum number of samples required at each leaf node.
+- **max_features**: Number of features to consider for the best split.
+
+## Repository Structure
+
+- `data/`: Contains the dataset used for training and testing.
+- `notebooks/`: Jupyter notebooks for exploratory data analysis and model training.
+- `scripts/`: Python scripts for data preprocessing, model training, and evaluation.
+- `results/`: Contains the evaluation metrics and plots.
+
+## How to Use
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/reddy0101/car-price-prediction
+   ```
+
+2. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Run the Jupyter notebooks in the `notebooks/` directory to explore the data and train the models.
+
+## Conclusion
+
+This project demonstrates the application of machine learning techniques for predicting car prices. The Random Forest model, after hyperparameter tuning, showed significant improvements over the baseline Linear Regression model. 
+
+Feel free to explore the repository and reach out if you have any questions or feedback!
+
+## Connect with Me
+
+- LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/shakala-vengala-reddy-52aba5288)
+- GitHub: [GitHub Profile](https://github.com/reddy0101)
+
+---
